@@ -4,10 +4,13 @@
    calcula a media e mostra essa media
 
    Inclua se o usuário foi aprovado ou reprovado
-   
+
    Media >= 7.0 == Aprovado
    Media < 5.0 == Reprovado
    Media entre 5.0 e 6.9 == Exame
+
+   Substitua a menor nota dele pela nova nota do exame e diga na tela se ele foi
+   aprovado ou reprovado
 */
 
 int main(void) {
@@ -30,8 +33,28 @@ int main(void) {
         } else {
             sit = 3;
             printf("\nSituation: EXAME!");
+            printf("\n-------------------");
         }
     }
-
+    if (sit = 3) {
+        float av3 = 0;
+        printf("\nInforme a nota do exame: ");
+        scanf("%f", &av3);
+        if (av1 > av2) {
+            media = (av1 + av3) / 2;
+            printf("\nA nova media e: %f", media);
+        } else {
+            media = av2 + av3;
+            printf("\nA nova media e: %.1f", media);
+        }
+        if (media >= 7) {
+            printf("\nAPROVADO!!");
+            printf("\n-------------------");
+        } else {
+            printf("\nREPROVADO!!");
+            printf("\n-------------------");
+        }
+    }
     return 0;    
 }
+    

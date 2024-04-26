@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Escreva um programa que recebe duas notas, 
+// calcula a media e mostra essa media
 // Inclua se o usuário foi aprovado ou reprovado
 
 int main(void) {
